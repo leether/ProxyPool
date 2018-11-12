@@ -7,7 +7,9 @@ try:
 except:
     from aiohttp import ClientProxyConnectionError as ProxyConnectionError
 from proxypool.db import RedisClient
-from proxypool.setting import *
+# from proxypool.setting import *
+from proxypool.setting import TEST_URL, VALID_STATUS_CODES, BATCH_TEST_SIZE
+
 
 
 class Tester(object):
